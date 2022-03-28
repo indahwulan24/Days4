@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profil"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ethome"
+        android:layout_width="330dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="280dp"
+        android:background="#949BA1"
+        android:drawable="@drawable/home"
+        android:drawableStart="@drawable/ic_baseline_help_outline_24"
+        android:drawableEnd="@drawable/ic_baseline_navigate_next_24"
+        android:ems="20"
+        android:onClick="clickbantuan"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093"
+        tools:ignore="OnClick" />
+
+    <EditText
+        android:layout_width="230dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="76dp"
+        android:background="#949BA1"
+        android:ems="20"
+        android:hint="Bantuan"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/white"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/ethome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <Button
+            android:layout_width="394dp"
+            android:layout_height="124dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#799DBC"
+            android:ems="20"
+            android:hint="Drop some Love her!"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/black"
+            android:textSize="25dp"
+            app:cornerRadius="10dp"
+            android:onClick="clickfeedback"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/ethome"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.995"
+            tools:ignore="OnClick" />
+
+        <ImageView
+            android:id="@+id/button2"
+            android:layout_width="44dp"
+            android:layout_height="36dp"
+            android:background="@drawable/back"
+            android:onClick="clicknext"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="7dp"
+            tools:ignore="MissingConstraints,OnClick" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
